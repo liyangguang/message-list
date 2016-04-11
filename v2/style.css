@@ -1,0 +1,33 @@
+.page-content{
+	margin-top: 30px;
+}
+
+.card-msg{
+	margin: 20px;
+	padding: 25px;
+	background: #FFF;
+}
+
+.user-pic{
+	float: left;
+	margin: 0 15px 0 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.user-name{
+	margin: 3px 0 0 0;
+	font-size: 14px;
+	color: #000;
+	font-weight: 500;
+}
+.post-time{
+	font-size: 12px;
+}
+
+.post-content{
+	font-size: 14px;
+	line-height: 24px;
+	clear: both;
+	color: #000;
+}

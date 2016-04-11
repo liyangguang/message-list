@@ -1,0 +1,83 @@
+/* ---------- reset --------- */
+li{
+	list-style-type: none;
+}
+/* ---------- reset --------- */
+
+
+/* ---------- helper --------- */
+.transition{
+-webkit-transition: all .2s ease;
+   -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+     -o-transition: all .2s ease;
+        transition: all .2s ease;
+}
+.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.overflow-text-ellipsis-70{
+	width: 70%;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+*{
+	-webkit-user-select: none;
+	-moz-user-select: none; 
+	-ms-user-select: none;     
+	user-select: none;         
+}
+/* ---------- helper --------- */
+
+
+/* ---------- material design style ------------ */
+*{
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.md-body-2{
+	margin-bottom: 0;
+	font-size: 14px;
+	color: rgba(0,0,0,.87);
+	font-weight: 500;
+	line-height: normal;
+}
+
+.md-caption{
+	font-size: 12px;
+	line-height: normal;
+	color: rgba(0,0,0,.54);
+}
+
+.md-body-1{
+	margin-bottom: 5px;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(0,0,0,.87);
+}
+.md-card{
+	display: block;
+	margin: 8px 16px;
+	padding: 16px;
+	background: #FFF;
+}
+.md-profile-img{
+	margin: 0 16px 0 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.md-snackbar{
+	justify-content: space-around;
+}
+/* ---------- material design style ------------ */
+
+
+/* ----------- style for this app -------------- */
+.message-list{
+	margin-top: 16px;
+	padding: 0;
+}

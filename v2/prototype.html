@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>Message prototype - Yangguang Li</title>
+    <meta name="description" content="Google interview - message prototype - Yangguang Li">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.deep_purple-red.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Messages</span>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Messages</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Some</a>
+          <a class="mdl-navigation__link" href="">Other</a>
+          <a class="mdl-navigation__link" href="">Navs</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <!-- <section id="test" class="card-msg mdl-shadow--3dp">
+      <img class="user-pic" src="http://message-list.appspot.com{{author.photoUrl}}" alt="user-pic">
+      <p class="user-name">{{author.name}}</p>
+      <p class="post-time">{{ timeago updated }}</p>
+      <p class="post-content">{{content}}</p>
+    </section> -->
+        </div>
+      </main>
+    </div>
+
+  <script id="msgs-template" type="text/x-handlebars-template">
+  {{#each messages}}
+    <section class="card-msg mdl-shadow--3dp">
+      <img class="user-pic" src="http://message-list.appspot.com{{author.photoUrl}}" alt="user-pic">
+      <p class="user-name">{{author.name}}</p>
+      <p class="post-time">{{ timeago updated }}</p>
+      <p class="post-content">{{content}}</p>
+    </section>
+  {{/each}}
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['msg'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : {}, alias4=helpers.helperMissing;
+
+  return "<li class=\"message js-message md-card mdl-shadow--3dp\"><img class=\"md-profile-img profile-pic\" src=\"http://message-list.appspot.com"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.photoUrl : stack1), depth0))
+    + "\" alt=\"Profile picture\"><p class=\"md-body-2 overflow-text-ellipsis-70\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.author : depth0)) != null ? stack1.name : stack1), depth0))
+    + "</p><p class=\"md-caption overflow-text-ellipsis-70\">"
+    + alias2((helpers.timeago || (depth0 && depth0.timeago) || alias4).call(alias3,(depth0 != null ? depth0.updated : depth0),{"name":"timeago","hash":{},"data":data}))
+    + "</p><p class=\"md-body-1\">"
+    + alias2(((helper = (helper = helpers.content || (depth0 != null ? depth0.content : depth0)) != null ? helper : alias4),(typeof helper === "function" ? helper.call(alias3,{"name":"content","hash":{},"data":data}) : helper)))
+    + "</p></li>";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.messages : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"useData":true});
+})();
